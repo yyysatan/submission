@@ -319,5 +319,5 @@ ax[2].tick_params(axis='x', labelsize=30)
 
 st.caption('Copyright (c) Dicoding 2024')
 st.caption('Made by // mraflidwis')
-
+st.caption('Bike Sharing Dataset : [1] Fanaee-T, Hadi, and Gama, Joao, "Event labeling combining ensemble detectors and background knowledge", Progress in Artificial Intelligence (2013): pp. 1-15, Springer Berlin Heidelberg, doi:10.1007/s13748-013-0040-3. ')
 

@@ -1,17 +1,6 @@
-Babel 
-Version: 2.14.0 
-
-matplotlib 
-Version: 3.7.2
-
-numpy
-Version: 1.25.5
-
-pandas
-Version: 2.1.0
-
-seaborn
-Version: 0.13.2
-
-streamlit
-Version: 0.31.2
+Babel==2.12.1
+matplotlib==3.8.0
+numpy==1.25.2
+pandas==2.1.4
+seaborn==0.13.0
+streamlit==1.26.0

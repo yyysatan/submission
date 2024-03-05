@@ -114,7 +114,7 @@ def create_year_df(df):
         "casual": "sum",
         "registered": "sum",
         "cnt": "sum"
-    }).round(0)
+    })
 
     year_df = year_df.reset_index()
     year_df.rename(columns={
@@ -197,13 +197,14 @@ ax.plot(
 ax.tick_params(axis='y', labelsize=15)
 ax.tick_params(axis='x', labelsize=15)
 ax.set_title("Total Renter", loc="center", fontsize=20)
+
  
 st.pyplot(fig)
 
 
 st.subheader('More Details about Renter in a Day')
  
-fig, ax = plt.subplots(nrows=1, ncols=3, figsize=(45, 6))
+fig, ax = plt.subplots(nrows=1, ncols=3, figsize=(45, 8))
  
 colors = ["#90CAF9", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3"]
  
@@ -227,6 +228,12 @@ ax[2].set_xlabel("Number of Renter", fontsize=30)
 ax[2].set_title("Total Renter", loc="center", fontsize=30)
 ax[2].tick_params(axis='y', labelsize=23)
 ax[2].tick_params(axis='x', labelsize=30)
+
+for axis in ax:
+    axis.set_xticklabels(axis.get_xticklabels(), rotation=45, ha='right')
+
+for axis in ax:
+    axis.get_xaxis().set_major_formatter(plt.FuncFormatter(lambda x, loc: "{:,}".format(int(x))))
 
 st.pyplot(fig)
 
@@ -257,11 +264,17 @@ ax[2].set_title("Total Renter", loc="center", fontsize=30)
 ax[2].tick_params(axis='y', labelsize=23)
 ax[2].tick_params(axis='x', labelsize=30)
 
+for axis in ax:
+    axis.set_xticklabels(axis.get_xticklabels(), rotation=45, ha='right')
+
+for axis in ax:
+    axis.get_xaxis().set_major_formatter(plt.FuncFormatter(lambda x, loc: "{:,}".format(int(x))))
+
 st.pyplot(fig)
 
 st.subheader('More Details about Renter in a Month')
  
-fig, ax = plt.subplots(nrows=1, ncols=3, figsize=(45, 6))
+fig, ax = plt.subplots(nrows=1, ncols=3, figsize=(45, 10))
  
 colors = ["#90CAF9", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3"]
  
@@ -285,6 +298,12 @@ ax[2].set_xlabel("Number of Renter", fontsize=30)
 ax[2].set_title("Total Renter", loc="center", fontsize=30)
 ax[2].tick_params(axis='y', labelsize=23)
 ax[2].tick_params(axis='x', labelsize=30)
+
+for axis in ax:
+    axis.set_xticklabels(axis.get_xticklabels(), rotation=45, ha='right')
+
+for axis in ax:
+    axis.get_xaxis().set_major_formatter(plt.FuncFormatter(lambda x, loc: "{:,}".format(int(x))))
 
 st.pyplot(fig)
 
@@ -315,6 +334,16 @@ ax[2].set_xlabel("Number of Renter", fontsize=30)
 ax[2].set_title("Total Renter", loc="center", fontsize=30)
 ax[2].tick_params(axis='y', labelsize=23)
 ax[2].tick_params(axis='x', labelsize=30)
+
+for axis in ax:
+    axis.set_xticklabels(axis.get_xticklabels(), rotation=45, ha='right')
+
+for axis in ax:
+    axis.get_xaxis().set_major_formatter(plt.FuncFormatter(lambda x, loc: "{:,}".format(int(x))))
+
+
+st.pyplot(fig)
+
 
 
 st.caption('Copyright (c) Dicoding 2024')

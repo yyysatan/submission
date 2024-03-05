@@ -200,6 +200,7 @@ ax.set_title("Total Renter", loc="center", fontsize=20)
 
  
 st.pyplot(fig)
+st.write("<p style='text-align:justify;'>Ada banyak hal yang dapat mempengaruhi performa penyewaan sepeda, namun jika kita melihat secara sudut pandang tahunan yang dimana kita melihat trending performa setiap bulan, maka hal yang paling mencolok based on data adalah pengaruh musim dan weathersit. Sisanya dijelaskan diluar data yang didapat. Trending cenderung naik dan sangat tinggi di pertengahan tahun dan turun di akhir tahun. namun di akhir tahun, trend tidak sampai jatuh dibawah awal tahun, seharusnya hal ini akan naik kembali apabila perusahaan bekerja keras dan mencari strategi yang efektif untuk mempertahankan sekaligus meningkatkan performa perusahaan bahkan jika kita lihat pada saat EDA, tahun demi tahun perusahaan dapat mengalami kenaikan performa.</p>", unsafe_allow_html=True)
 
 
 st.subheader('More Details about Renter in a Day')
@@ -236,6 +237,8 @@ for axis in ax:
     axis.get_xaxis().set_major_formatter(plt.FuncFormatter(lambda x, loc: "{:,}".format(int(x))))
 
 st.pyplot(fig)
+st.write("<p style='text-align:justify;'>Jumlah penyewa sepeda yang paling tinggi di pegang oleh hari jumat, namun apabila kita gali lebih dalam, sebenarnya untuk casual renter atau peminjam spontan / peminjam non-member, cenderung tinggi pada hari sabtu, hal ini bisa diartikan dipengaruhi oleh weekday, dan banyak orang baru atau orang yang spontan saja menyewa sepeda tanpa berlangganan karena memang mereka menyewa hanya untuk vacation, berlibur, dan tidak ada rencana untuk memperpanjang sewa. Sedangkan untuk Registered Renter atau penyewa yang sudah merupakan member dari perusahaan, cenderung rata-rata terbanyak meminjam di hari kamis, hal ini sulit saya jelaskan karena kurangnya informasi yang diberikan.</p>", unsafe_allow_html=True)
+
 
 st.subheader('More Details about Renter in a Season')
  
@@ -271,6 +274,8 @@ for axis in ax:
     axis.get_xaxis().set_major_formatter(plt.FuncFormatter(lambda x, loc: "{:,}".format(int(x))))
 
 st.pyplot(fig)
+st.write("<p style='text-align:justify;'>Jumlah penyewa sepeda yang paling tinggi baik untuk casual user, registered user, maupun keseluruhan dipegang oleh Fall Season. Karena kurangnya informasi, seperti latar tempat dari data yang diambil maka pendapat saya adalah karena Musim gugur identik dengan udara yang lebih segar dan bersih dibandingkan musim panas. Pada musim gugur juga memiliki udara yang sejuk dan bebas polusi membuat bersepeda lebih menyehatkan dan menyenangkan.</p>", unsafe_allow_html=True)
+
 
 st.subheader('More Details about Renter in a Month')
  
@@ -305,7 +310,10 @@ for axis in ax:
 for axis in ax:
     axis.get_xaxis().set_major_formatter(plt.FuncFormatter(lambda x, loc: "{:,}".format(int(x))))
 
+
 st.pyplot(fig)
+st.write("<p style='text-align:justify;'>Jumlah penyewa sepeda yang paling tinggi di pegang oleh bulan Agustus untuk keseluruhan renter dan registered renter, namun untuk casual renter yang meminjam secara spontan / peminjam non-member, mereka cenderung banyak meminjam pada bulan juli</p>", unsafe_allow_html=True)
+
 
 
 st.subheader('More Details about Renter in a Year')
@@ -343,6 +351,8 @@ for axis in ax:
 
 
 st.pyplot(fig)
+st.write("<p style='text-align:justify;'>Jumlah penyewa sepeda mengalami kenaikan dari tahun 2011 ke 2012 untuk semua user </p>", unsafe_allow_html=True)
+
 
 
 
